@@ -1,9 +1,9 @@
 {
-    "family": "freshnewtask",
+    "family": "tibcobwceapptask",
     "containerDefinitions": [
         {
-            "name": "freshnewcontainer2",
-            "image": "717904358179.dkr.ecr.us-east-2.amazonaws.com/freshnewrepo5:latest",
+            "name": "tibcobwcecontainer",
+            "image": "717904358179.dkr.ecr.us-east-2.amazonaws.com/tibcobwceapp:latest",
             "cpu": 10,
             "memory": 1024,
             "portMappings": [
