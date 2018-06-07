@@ -21,7 +21,11 @@
 			</exec> 
 			
 			<copy todir="C:\Users\Manish\Documents\JENKINS\workspace\BuildBWCEArtifacts\Artifacts">
-				<fileset dir="${WORKSPACE_PATH}/${PROJECT_NAME}/Artifacts" includes= "${PROJECT_NAME}.html"/>
+				<fileset dir="${WORKSPACE_PATH}/${PROJECT_NAME}/Artifacts">
+					<include name= "${PROJECT_NAME}.html"/>
+					<include name = "${PROJECT_NAME}.txt"/>
+					<include name= "${PROJECT_NAME}.xml"/>
+				</fileset>
 			</copy>
 			<echo>Workspace ${WORKSPACE_PATH}/${PROJECT_NAME}</echo>
 			<!--<copy src="C:\Users\Manish\Documents\JENKINS\workspace\BuildProject\Artifacts\*.ear" dest="${WORKSPACE_PATH}/${PROJECT_NAME}/Artifacts"/>-->
